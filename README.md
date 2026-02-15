@@ -1,16 +1,30 @@
 # Egor Kotov's Homebrew Tap
 
-This repository contains Homebrew formulas for various tools and applications developed by Egor Kotov.
+This repository contains Homebrew formulas and casks for various tools and applications developed by Egor Kotov.
 
-## Tailscale Proxy App
+## Tailscale Proxy
 
 Standalone userspace egress proxy for Tailscale exit nodes (no root required). It exposes a local HTTP/SOCKS5 proxy that routes traffic through any of your tailnet's exit nodes.
 
-### Quick Install
+### 💻 CLI Version
+
+Lightweight, CGO-free binary for terminal use.
 
 ```bash
-brew install e-kotov/tap/tailscale-proxy-app
+brew install e-kotov/tap/tailscale-proxy
 ```
+
+### 🖥️ Desktop Version (GUI)
+
+Full cross-platform desktop application with status window and rich log viewer. Available for macOS, Linux, and Windows.
+
+**macOS (Homebrew Cask):**
+
+```bash
+brew install --cask e-kotov/tap/tailscale-proxy-app
+```
+
+**Linux/Windows:** Download the binary or package from [Releases](https://github.com/e-kotov/tailscale-proxy-app/releases).
 
 ---
 More info at the [main repository](https://github.com/e-kotov/tailscale-proxy-app)
