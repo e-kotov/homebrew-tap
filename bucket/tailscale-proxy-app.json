@@ -6,14 +6,14 @@
             "bin": [
                 "tailscale-proxy-app.exe"
             ],
-            "hash": "e6af34997698238f9037036233b036f9bea011a245e311a7765cb8f79933648f"
+            "hash": "16724837ad83622517ebde6e56afbd0d2508eb4af95bc4d7af96dca2333b6282"
         },
         "arm64": {
             "url": "https://github.com/e-kotov/tailscale-proxy-app/releases/download/v0.0.2/tailscale-proxy-app_0.0.2_windows_arm64.zip",
             "bin": [
                 "tailscale-proxy-app.exe"
             ],
-            "hash": "89213bc8046f784729d09aa986362e9cbcb8e3d1b8925ea2b5e8828c160e14de"
+            "hash": "36977e5679e5f616a96463c13c8a2e30d8a597c0164e087677ad40a98e9d3001"
         }
     },
     "homepage": "https://github.com/e-kotov/tailscale-proxy-app",
