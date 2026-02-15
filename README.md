@@ -16,6 +16,12 @@ Then you can install formulas using:
 brew install <formula-name>
 ```
 
+Alternatively, you can install a tool directly without tapping the repository first:
+
+```bash
+brew install e-kotov/tap/<formula-name>
+```
+
 ## Available Formulas
 
 | Formula | Description |
