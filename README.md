@@ -14,7 +14,7 @@ brew tap e-kotov/tap
 
 ### [proxy-app-for-tailscale](https://github.com/e-kotov/tailscale-proxy-app)
 
-Independent Community Proxy for Tailscale.
+Standalone userspace egress proxy for Tailscale exit nodes (no root required).
 
 ```bash
 brew install e-kotov/tap/proxy-app-for-tailscale
