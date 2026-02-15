@@ -1,0 +1,22 @@
+{
+    "version": "0.0.2",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/e-kotov/tailscale-proxy-app/releases/download/v0.0.2/tailscale-proxy-app_0.0.2_windows_x86_64.zip",
+            "bin": [
+                "tailscale-proxy-app.exe"
+            ],
+            "hash": "e6af34997698238f9037036233b036f9bea011a245e311a7765cb8f79933648f"
+        },
+        "arm64": {
+            "url": "https://github.com/e-kotov/tailscale-proxy-app/releases/download/v0.0.2/tailscale-proxy-app_0.0.2_windows_arm64.zip",
+            "bin": [
+                "tailscale-proxy-app.exe"
+            ],
+            "hash": "89213bc8046f784729d09aa986362e9cbcb8e3d1b8925ea2b5e8828c160e14de"
+        }
+    },
+    "homepage": "https://github.com/e-kotov/tailscale-proxy-app",
+    "license": "BSD-3-Clause",
+    "description": "Standalone userspace egress proxy for Tailscale exit nodes (no root required). It exposes a local HTTP/SOCKS5 proxy that routes traffic through any of your tailnet's exit nodes."
+}
