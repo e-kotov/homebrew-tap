@@ -1,0 +1,22 @@
+{
+    "version": "0.1.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/e-kotov/tailscale-proxy-app/releases/download/v0.1.0/tailscale-proxy_0.1.0_windows_x86_64.zip",
+            "bin": [
+                "tailscale-proxy.exe"
+            ],
+            "hash": "6565e40233059dca8efc9346cac42fb8d63d88323ff0266d406124d57a520156"
+        },
+        "arm64": {
+            "url": "https://github.com/e-kotov/tailscale-proxy-app/releases/download/v0.1.0/tailscale-proxy_0.1.0_windows_arm64.zip",
+            "bin": [
+                "tailscale-proxy.exe"
+            ],
+            "hash": "5ccf92346d77b2130354168604b8bbaf4fb9a737a572962bc42ec40544d768c8"
+        }
+    },
+    "homepage": "https://github.com/e-kotov/tailscale-proxy-app",
+    "license": "BSD-3-Clause",
+    "description": "Lightweight CLI proxy for Tailscale exit nodes (no root required)."
+}
