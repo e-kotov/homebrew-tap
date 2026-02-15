@@ -14,7 +14,7 @@ brew tap e-kotov/tap
 
 ### [proxy-app-for-tailscale](https://github.com/e-kotov/tailscale-proxy-app)
 
-Standalone userspace egress proxy for Tailscale exit nodes (no root required).
+Standalone userspace egress proxy for Tailscale exit nodes (no root required). It exposes a local HTTP/SOCKS5 proxy that routes traffic through any of your tailnet's exit nodes.
 
 ```bash
 brew install e-kotov/tap/proxy-app-for-tailscale
