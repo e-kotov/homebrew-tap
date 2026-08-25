@@ -1,14 +1,14 @@
 cask "tailscale-proxy-app" do
-  version "0.1.1"
+  version "0.1.2"
 
   on_intel do
-    url "https://github.com/e-kotov/tailscale-proxy-app/releases/download/v0.1.1/tailscale-proxy-app_0.1.1_macOS_x86_64.tar.gz"
-    sha256 "665bc54d7453f23c2d2f9f492b2f7bb4493c7a7641c5e36bcdc6181012c627b1"
+    url "https://github.com/e-kotov/tailscale-proxy-app/releases/download/v0.1.2/tailscale-proxy-app_0.1.2_macOS_x86_64.tar.gz"
+    sha256 "1366c466c938fb8a4cdbc19d57d704d42351d9b8968760507912fb88c9fd5c68"
   end
 
   on_arm do
-    url "https://github.com/e-kotov/tailscale-proxy-app/releases/download/v0.1.1/tailscale-proxy-app_0.1.1_macOS_arm64.tar.gz"
-    sha256 "c131a4c76c36e8262626c8bf2f3d8c32f21bc37a029a3e416a05e56d8c9c770e"
+    url "https://github.com/e-kotov/tailscale-proxy-app/releases/download/v0.1.2/tailscale-proxy-app_0.1.2_macOS_arm64.tar.gz"
+    sha256 "225c7b69bdadf2dc1a07d7feb3194674ddb8bc452795b86076022155b4b761ab"
   end
 
   name "Tailscale Proxy App"
