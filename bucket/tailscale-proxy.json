@@ -1,19 +1,19 @@
 {
-    "version": "0.1.1",
+    "version": "0.1.2",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/e-kotov/tailscale-proxy-app/releases/download/v0.1.1/tailscale-proxy_0.1.1_windows_x86_64.zip",
+            "url": "https://github.com/e-kotov/tailscale-proxy-app/releases/download/v0.1.2/tailscale-proxy_0.1.2_windows_x86_64.zip",
             "bin": [
                 "tailscale-proxy.exe"
             ],
-            "hash": "3c12ac16400b10504e12d15b1abc6da60ad8b57b1137d85a45fca40028201d58"
+            "hash": "9379faa22df8fc647951d7a2df4314b3e912ab057b8afddb50f96be2ac65b8da"
         },
         "arm64": {
-            "url": "https://github.com/e-kotov/tailscale-proxy-app/releases/download/v0.1.1/tailscale-proxy_0.1.1_windows_arm64.zip",
+            "url": "https://github.com/e-kotov/tailscale-proxy-app/releases/download/v0.1.2/tailscale-proxy_0.1.2_windows_arm64.zip",
             "bin": [
                 "tailscale-proxy.exe"
             ],
-            "hash": "06d8b6f7d6df02062dfc632959195c40fe3b62955c469558c1c5c5da724ea8b1"
+            "hash": "77c70e0bb957d7b0cb0552e0471ae67459adbd547b7cea9d1f676d8e52c61f6b"
         }
     },
     "homepage": "https://github.com/e-kotov/tailscale-proxy-app",
