@@ -19,4 +19,21 @@ cask "t3-code-ek" do
   depends_on macos: :ventura
 
   app "T3 Code EK.app"
+
+  # Personal fork builds are ad-hoc signed and not notarized. Re-seal the app
+  # after installation, then remove only its quarantine flag so Gatekeeper
+  # does not block this known release on this Mac.
+  postflight_steps do
+    run "/usr/bin/codesign",
+        args: [
+          "--force",
+          "--deep",
+          "--sign",
+          "-",
+          "--timestamp=none",
+          "{{appdir}}/T3 Code EK.app",
+        ]
+    run "/usr/bin/xattr",
+        args: ["-dr", "com.apple.quarantine", "{{appdir}}/T3 Code EK.app"]
+  end
 end
