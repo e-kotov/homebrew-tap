@@ -16,7 +16,6 @@ cask "t3-code-ek" do
   desc "Desktop app for AI-assisted coding"
   homepage "https://github.com/e-kotov/t3code"
 
-  auto_updates true
   depends_on macos: :ventura
 
   app "T3 Code EK.app"
