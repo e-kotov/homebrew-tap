@@ -28,3 +28,14 @@ brew install --cask e-kotov/tap/tailscale-proxy-app
 
 ---
 More info at the [main repository](https://github.com/e-kotov/tailscale-proxy-app)
+
+## T3 Code EK
+
+Install or update the macOS desktop app from the fork's GitHub releases:
+
+```bash
+brew install --cask e-kotov/tap/t3-code-ek
+brew upgrade --cask t3-code-ek
+```
+
+The cask is versioned with each published T3 Code EK release. Mac builds are not notarized.
