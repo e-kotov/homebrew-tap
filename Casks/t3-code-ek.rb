@@ -1,11 +1,9 @@
 cask "t3-code-ek" do
   version "0.0.46-ek.4"
-
   sha256 "484bc6f4f12e2ac40edd6d9711ad0625b49af254e4d5f2f0743eb175dc036cc6"
 
   # Apple Silicon only; the fork publishes no Intel builds.
   url "https://github.com/e-kotov/t3code/releases/download/v#{version}/T3-Code-#{version}-arm64.dmg"
-
   name "T3 Code EK"
   desc "Desktop app for AI-assisted coding"
   homepage "https://github.com/e-kotov/t3code"
