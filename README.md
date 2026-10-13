@@ -38,4 +38,6 @@ brew install --cask e-kotov/tap/t3-code-ek
 brew upgrade --cask t3-code-ek
 ```
 
-The cask is versioned with each published T3 Code EK release. Mac builds are not notarized.
+The fork's release workflow updates this cask to each published `vX.Y.Z-ek.N`
+prerelease, using a write deploy key on this repository. Upgrading stays manual.
+Mac builds are not notarized; the cask re-signs the app ad hoc after install.

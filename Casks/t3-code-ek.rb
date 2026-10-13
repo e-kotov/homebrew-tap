@@ -16,6 +16,14 @@ cask "t3-code-ek" do
   desc "Desktop app for AI-assisted coding"
   homepage "https://github.com/e-kotov/t3code"
 
+  # Fork releases are prereleases tagged vX.Y.Z-ek.N; the fork also carries
+  # upstream's tags, which must not count as cask versions.
+  livecheck do
+    url "https://github.com/e-kotov/t3code.git"
+    regex(/^v?(\d+(?:\.\d+)+-ek\.\d+)$/i)
+    strategy :git
+  end
+
   depends_on macos: :ventura
 
   app "T3 Code EK.app"
