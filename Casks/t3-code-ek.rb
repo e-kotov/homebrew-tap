@@ -1,13 +1,13 @@
 cask "t3-code-ek" do
-  version "0.0.46-ek.3"
+  version "0.0.46-ek.4"
 
   on_arm do
-    sha256 "c8dcfadc9649a095c98e3eef19ccb84925511ec524b46b8edbb487d40eae19cb"
+    sha256 "484bc6f4f12e2ac40edd6d9711ad0625b49af254e4d5f2f0743eb175dc036cc6"
 
     url "https://github.com/e-kotov/t3code/releases/download/v#{version}/T3-Code-#{version}-arm64.dmg"
   end
   on_intel do
-    sha256 "283505adf5f88903fafd93be13aae02af9f7e836e344888113b4aad4b88a23bf"
+    sha256 "f66fc6cc5ee8d2284aa95b40054b27372ef1d97d6ffc0027b1e247486c668b93"
 
     url "https://github.com/e-kotov/t3code/releases/download/v#{version}/T3-Code-#{version}-x64.dmg"
   end
