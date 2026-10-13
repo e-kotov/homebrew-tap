@@ -40,4 +40,4 @@ brew upgrade --cask t3-code-ek
 
 The fork's release workflow updates this cask to each published `vX.Y.Z-ek.N`
 prerelease, using a write deploy key on this repository. Upgrading stays manual.
-Mac builds are not notarized; the cask re-signs the app ad hoc after install.
+Apple Silicon only (no Intel builds). Mac builds are not notarized; the cask re-signs the app ad hoc after install.
