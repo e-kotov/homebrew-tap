@@ -1,6 +1,6 @@
 cask "t3-code-ek" do
-  version "0.0.46-ek.9"
-  sha256 "ba5a0501b181a11c4dae4562023d82323e929cc5f16f6f8f200626ea6cc0347b"
+  version "0.0.46-ek.10"
+  sha256 "03fcacbeeb51e89bc3ae2dfb6845fb630882eb8c1122969d3fe1aadf1a8a4cd5"
 
   # Apple Silicon only; the fork publishes no Intel builds.
   url "https://github.com/e-kotov/t3code/releases/download/v#{version}/T3-Code-#{version}-arm64.dmg"
