@@ -1,15 +1,12 @@
 cask "t3-code-ek" do
-  version "0.1.3-ek.11"
-  sha256 "5adb521eb30030021e224f780fff263639a5cf4ca2945f8408b3266bfd66c768"
+  version "0.1.3-ek.12"
+  sha256 "4fbdca6cf306e02a9284e1ad899cc160c16338ada552f4cc8aab18af0594cb68"
 
-  # Apple Silicon only; the fork publishes no Intel builds.
   url "https://github.com/e-kotov/t3code/releases/download/v#{version}/T3-Code-#{version}-arm64.dmg"
   name "T3 Code EK"
   desc "Desktop app for AI-assisted coding"
   homepage "https://github.com/e-kotov/t3code"
 
-  # Fork releases are prereleases tagged vX.Y.Z-ek.N; the fork also carries
-  # upstream's tags, which must not count as cask versions.
   livecheck do
     url "https://github.com/e-kotov/t3code.git"
     regex(/^v?(\d+(?:\.\d+)+-ek\.\d+)$/i)
@@ -21,17 +18,15 @@ cask "t3-code-ek" do
 
   app "T3 Code EK.app"
 
-  # Personal fork builds are ad-hoc signed and not notarized. Re-seal the app
-  # after installation, then remove only its quarantine flag so Gatekeeper
-  # does not block this known release on this Mac.
   postflight_steps do
+    # Preserve the release signature so Keychain recognizes subsequent updates.
     run "/usr/bin/codesign",
         args: [
-          "--force",
+          "--verify",
           "--deep",
-          "--sign",
-          "-",
-          "--timestamp=none",
+          "--strict",
+          "-R",
+          '=identifier "pro.ekotov.t3code" and certificate root = H"6eea3d76ac584a617c48490ba138e98da1f4aa78"',
           "{{appdir}}/T3 Code EK.app",
         ]
     run "/usr/bin/xattr",
