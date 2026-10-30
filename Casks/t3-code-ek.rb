@@ -1,6 +1,6 @@
 cask "t3-code-ek" do
-  version "0.1.6-ek.202610290001"
-  sha256 "d839f11c95a20e8c51890a0679fd2e42c343a651b075189243a826a36d29233f"
+  version "0.1.6-ek.202610300001"
+  sha256 "5f2e81c47a1ccf44a4dd6398fdbd04a2d717ed5843338d0ceef60ad16a8a5211"
 
   url "https://github.com/e-kotov/t3code/releases/download/v#{version}/T3-Code-#{version}-arm64.dmg"
   name "T3 Code EK"
