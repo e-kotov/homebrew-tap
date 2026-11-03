@@ -1,6 +1,6 @@
 cask "t3-code-ek" do
-  version "0.1.7-ek.202611030002"
-  sha256 "e6b5476ea43bbde4ad81d49da86e60af1f2ce38e8240a3db70e39183b1f01fe7"
+  version "0.1.7-ek.202611030003"
+  sha256 "fb741cfaceb32fb4621ca5b7c22d5d3a54d6e54a1f79758b03b13b80b6a823e9"
 
   url "https://github.com/e-kotov/t3code/releases/download/v#{version}/T3-Code-#{version}-arm64.dmg"
   name "T3 Code EK"
@@ -26,7 +26,7 @@ cask "t3-code-ek" do
           "--deep",
           "--strict",
           "-R",
-          '=identifier "pro.ekotov.t3code" and certificate root = H"6eea3d76ac584a617c48490ba138e98da1f4aa78"',
+          '=identifier "pro.ekotov.t3code" and anchor apple generic and certificate leaf[subject.OU] = "2MC7X68AVT" and certificate leaf[field.1.2.840.113635.100.6.1.12] exists',
           "{{appdir}}/T3 Code EK.app",
         ]
     run "/usr/bin/xattr",
