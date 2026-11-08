@@ -2,18 +2,6 @@
 
 This repository contains Homebrew formulas and casks for various tools and applications developed by Egor Kotov.
 
-## JumpCut
-
-Instant macOS Spaces switching: replaces the slow desktop-slide animation of a three-finger horizontal trackpad swipe with a near-instant native transition. Experimental; primary target is macOS 27 on Apple Silicon.
-
-```bash
-brew install --cask e-kotov/tap/jumpcut
-```
-
-The cask installs the Apple Development-signed release, verifies the pinned code signature, and clears the quarantine attribute. After the first launch, grant JumpCut Accessibility permission in System Settings. More info at the [main repository](https://github.com/e-kotov/JumpCut).
-
----
-
 ## Tailscale Proxy
 
 Standalone userspace egress proxy for Tailscale exit nodes (no root required). It exposes a local HTTP/SOCKS5 proxy that routes traffic through any of your tailnet's exit nodes.
